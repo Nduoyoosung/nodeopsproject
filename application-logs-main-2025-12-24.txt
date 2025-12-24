@@ -1,0 +1,95 @@
+0001 2025-12-24T11:32:45.460341959Z /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+0002 2025-12-24T11:32:45.460384451Z /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+0003 2025-12-24T11:32:45.480525587Z /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+0004 2025-12-24T11:32:45.501081446Z 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+0005 2025-12-24T11:32:45.509649356Z 10-listen-on-ipv6-by-default.sh: info: /etc/nginx/conf.d/default.conf differs from the packaged version
+0006 2025-12-24T11:32:45.509951801Z /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+0007 2025-12-24T11:32:45.510061287Z /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+0008 2025-12-24T11:32:45.514956082Z /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+0009 2025-12-24T11:32:45.518010272Z /docker-entrypoint.sh: Configuration complete; ready for start up
+0010 2025-12-24T11:32:45.546631118Z 2025/12/24 11:32:45 [notice] 1#1: using the "epoll" event method
+0011 2025-12-24T11:32:45.546652883Z 2025/12/24 11:32:45 [notice] 1#1: nginx/1.29.1
+0012 2025-12-24T11:32:45.546657633Z 2025/12/24 11:32:45 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14+deb12u1) 
+0013 2025-12-24T11:32:45.546661630Z 2025/12/24 11:32:45 [notice] 1#1: OS: Linux 6.8.0-87-generic
+0014 2025-12-24T11:32:45.546665581Z 2025/12/24 11:32:45 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+0015 2025-12-24T11:32:45.551530760Z 2025/12/24 11:32:45 [notice] 1#1: start worker processes
+0016 2025-12-24T11:32:45.552020343Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 28
+0017 2025-12-24T11:32:45.552406961Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 29
+0018 2025-12-24T11:32:45.552752284Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 30
+0019 2025-12-24T11:32:45.553255478Z 2025/12/24 11:32:45 [emerg] 29#29: io_setup() failed (11: Resource temporarily unavailable)
+0020 2025-12-24T11:32:45.567856544Z 2025/12/24 11:32:45 [emerg] 30#30: io_setup() failed (11: Resource temporarily unavailable)
+0021 2025-12-24T11:32:45.580379877Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 31
+0022 2025-12-24T11:32:45.580766635Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 32
+0023 2025-12-24T11:32:45.580778447Z 2025/12/24 11:32:45 [emerg] 28#28: io_setup() failed (11: Resource temporarily unavailable)
+0024 2025-12-24T11:32:45.580870851Z 2025/12/24 11:32:45 [emerg] 31#31: io_setup() failed (11: Resource temporarily unavailable)
+0025 2025-12-24T11:32:45.581054992Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 33
+0026 2025-12-24T11:32:45.581402344Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 34
+0027 2025-12-24T11:32:45.581620161Z 2025/12/24 11:32:45 [emerg] 32#32: io_setup() failed (11: Resource temporarily unavailable)
+0028 2025-12-24T11:32:45.581638350Z 2025/12/24 11:32:45 [emerg] 33#33: io_setup() failed (11: Resource temporarily unavailable)
+0029 2025-12-24T11:32:45.581683381Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 35
+0030 2025-12-24T11:32:45.581842322Z 2025/12/24 11:32:45 [emerg] 34#34: io_setup() failed (11: Resource temporarily unavailable)
+0031 2025-12-24T11:32:45.581997584Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 36
+0032 2025-12-24T11:32:45.582087339Z 2025/12/24 11:32:45 [emerg] 35#35: io_setup() failed (11: Resource temporarily unavailable)
+0033 2025-12-24T11:32:45.582278361Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 37
+0034 2025-12-24T11:32:45.582482081Z 2025/12/24 11:32:45 [emerg] 36#36: io_setup() failed (11: Resource temporarily unavailable)
+0035 2025-12-24T11:32:45.582591849Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 38
+0036 2025-12-24T11:32:45.582679597Z 2025/12/24 11:32:45 [emerg] 37#37: io_setup() failed (11: Resource temporarily unavailable)
+0037 2025-12-24T11:32:45.582879472Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 39
+0038 2025-12-24T11:32:45.582971381Z 2025/12/24 11:32:45 [emerg] 38#38: io_setup() failed (11: Resource temporarily unavailable)
+0039 2025-12-24T11:32:45.583180755Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 40
+0040 2025-12-24T11:32:45.583268795Z 2025/12/24 11:32:45 [emerg] 39#39: io_setup() failed (11: Resource temporarily unavailable)
+0041 2025-12-24T11:32:45.583491016Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 41
+0042 2025-12-24T11:32:45.583601543Z 2025/12/24 11:32:45 [emerg] 40#40: io_setup() failed (11: Resource temporarily unavailable)
+0043 2025-12-24T11:32:45.583750264Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 42
+0044 2025-12-24T11:32:45.583864806Z 2025/12/24 11:32:45 [emerg] 41#41: io_setup() failed (11: Resource temporarily unavailable)
+0045 2025-12-24T11:32:45.584009735Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 43
+0046 2025-12-24T11:32:45.584120496Z 2025/12/24 11:32:45 [emerg] 42#42: io_setup() failed (11: Resource temporarily unavailable)
+0047 2025-12-24T11:32:45.584299572Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 44
+0048 2025-12-24T11:32:45.584420800Z 2025/12/24 11:32:45 [emerg] 43#43: io_setup() failed (11: Resource temporarily unavailable)
+0049 2025-12-24T11:32:45.584602302Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 45
+0050 2025-12-24T11:32:45.584667617Z 2025/12/24 11:32:45 [emerg] 44#44: io_setup() failed (11: Resource temporarily unavailable)
+0051 2025-12-24T11:32:45.584877604Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 46
+0052 2025-12-24T11:32:45.584914367Z 2025/12/24 11:32:45 [emerg] 45#45: io_setup() failed (11: Resource temporarily unavailable)
+0053 2025-12-24T11:32:45.585170421Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 47
+0054 2025-12-24T11:32:45.585188761Z 2025/12/24 11:32:45 [emerg] 46#46: io_setup() failed (11: Resource temporarily unavailable)
+0055 2025-12-24T11:32:45.585473949Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 48
+0056 2025-12-24T11:32:45.585488025Z 2025/12/24 11:32:45 [emerg] 47#47: io_setup() failed (11: Resource temporarily unavailable)
+0057 2025-12-24T11:32:45.585775379Z 2025/12/24 11:32:45 [emerg] 48#48: io_setup() failed (11: Resource temporarily unavailable)
+0058 2025-12-24T11:32:45.585781475Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 49
+0059 2025-12-24T11:32:45.586079822Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 50
+0060 2025-12-24T11:32:45.586107848Z 2025/12/24 11:32:45 [emerg] 49#49: io_setup() failed (11: Resource temporarily unavailable)
+0061 2025-12-24T11:32:45.586387494Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 51
+0062 2025-12-24T11:32:45.586500538Z 2025/12/24 11:32:45 [emerg] 50#50: io_setup() failed (11: Resource temporarily unavailable)
+0063 2025-12-24T11:32:45.586717259Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 52
+0064 2025-12-24T11:32:45.586741494Z 2025/12/24 11:32:45 [emerg] 51#51: io_setup() failed (11: Resource temporarily unavailable)
+0065 2025-12-24T11:32:45.587031582Z 2025/12/24 11:32:45 [emerg] 52#52: io_setup() failed (11: Resource temporarily unavailable)
+0066 2025-12-24T11:32:45.587070563Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 53
+0067 2025-12-24T11:32:45.587425187Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 54
+0068 2025-12-24T11:32:45.587454610Z 2025/12/24 11:32:45 [emerg] 53#53: io_setup() failed (11: Resource temporarily unavailable)
+0069 2025-12-24T11:32:45.587816420Z 2025/12/24 11:32:45 [emerg] 54#54: io_setup() failed (11: Resource temporarily unavailable)
+0070 2025-12-24T11:32:45.587825045Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 55
+0071 2025-12-24T11:32:45.588207779Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 56
+0072 2025-12-24T11:32:45.588229536Z 2025/12/24 11:32:45 [emerg] 55#55: io_setup() failed (11: Resource temporarily unavailable)
+0073 2025-12-24T11:32:45.588548859Z 2025/12/24 11:32:45 [emerg] 56#56: io_setup() failed (11: Resource temporarily unavailable)
+0074 2025-12-24T11:32:45.588568014Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 57
+0075 2025-12-24T11:32:45.588891596Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 58
+0076 2025-12-24T11:32:45.588909669Z 2025/12/24 11:32:45 [emerg] 57#57: io_setup() failed (11: Resource temporarily unavailable)
+0077 2025-12-24T11:32:45.589270321Z 2025/12/24 11:32:45 [emerg] 58#58: io_setup() failed (11: Resource temporarily unavailable)
+0078 2025-12-24T11:32:45.589279833Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 59
+0079 2025-12-24T11:32:45.589611113Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 60
+0080 2025-12-24T11:32:45.589695823Z 2025/12/24 11:32:45 [emerg] 59#59: io_setup() failed (11: Resource temporarily unavailable)
+0081 2025-12-24T11:32:45.590007762Z 2025/12/24 11:32:45 [emerg] 60#60: io_setup() failed (11: Resource temporarily unavailable)
+0082 2025-12-24T11:32:45.590013639Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 61
+0083 2025-12-24T11:32:45.590385472Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 62
+0084 2025-12-24T11:32:45.590491312Z 2025/12/24 11:32:45 [emerg] 61#61: io_setup() failed (11: Resource temporarily unavailable)
+0085 2025-12-24T11:32:45.590767649Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 63
+0086 2025-12-24T11:32:45.590774498Z 2025/12/24 11:32:45 [emerg] 62#62: io_setup() failed (11: Resource temporarily unavailable)
+0087 2025-12-24T11:32:45.591064068Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 64
+0088 2025-12-24T11:32:45.591081091Z 2025/12/24 11:32:45 [emerg] 63#63: io_setup() failed (11: Resource temporarily unavailable)
+0089 2025-12-24T11:32:45.591387108Z 2025/12/24 11:32:45 [emerg] 64#64: io_setup() failed (11: Resource temporarily unavailable)
+0090 2025-12-24T11:32:45.591435637Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 65
+0091 2025-12-24T11:32:45.591787262Z 2025/12/24 11:32:45 [emerg] 65#65: io_setup() failed (11: Resource temporarily unavailable)
+0092 2025-12-24T11:32:45.592147898Z 2025/12/24 11:32:45 [emerg] 66#66: io_setup() failed (11: Resource temporarily unavailable)
+0093 2025-12-24T11:32:45.667221939Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 66
+0094 2025-12-24T11:32:45.667934524Z 2025/12/24 11:32:45 [notice] 1#1: start worker process 67
+0095 2025-12-24T11:32:45.668518058Z 2025/12/24 11:32:45 [emerg] 67#67: io_setup() failed (11: Resource temporarily unavailable)
